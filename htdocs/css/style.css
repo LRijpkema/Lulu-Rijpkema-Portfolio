@@ -1,0 +1,100 @@
+body{
+    font-family: 'Inter', sans-serif;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+.container{
+    margin-top: 4rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  align-items: center;
+
+}
+
+header a {
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav li {
+    display:inline-block;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+h1 {
+    position: relative;
+    margin-top: 15rem;
+    font-size: 4rem;
+   font-weight: 300;
+}
+
+h1 span{
+  position: relative;
+  top: 5rem;
+  left: -32rem;
+}
+
+h2{
+    margin-top: 20rem;
+    position: absolute;
+    right: 30rem;
+    font-size: 4rem;
+   font-weight: 300;;
+}
+
+.hero {
+    background-color: rgb(255, 255, 255);
+    height: 55vh;
+    width: auto;
+}
+
+
+.blur1 {
+    scale: 2;
+    z-index: -1;
+    filter:  brightness(200%) contrast(0.6) opacity(50%);
+}
+
+.blur2 {
+    scale: 0.8;
+    z-index: 3;
+    filter: hue-rotate(70deg) brightness(1.7);
+    position: relative;
+    top: -25rem;
+    left: 40rem;
+}
+
+
+
+.projects {
+    position: relative;
+    z-index: 1;
+    background-color: #F1F1F1;
+    margin-left: -20rem;
+    height: 90vh;
+    width: 100vw;
+}
+
+.content h2{
+    margin-top: 10rem;
+    position: absolute;
+    left: 20rem;
+}
+
