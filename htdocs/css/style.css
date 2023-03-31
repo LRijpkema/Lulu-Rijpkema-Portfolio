@@ -23,7 +23,7 @@ overflow-y: scroll;
 
 header a {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
@@ -40,22 +40,22 @@ header a {
 
 h1 {
     position: relative;
-    margin-top: 15rem;
-    font-size: 4rem;
+    margin-top: 10rem;
+    font-size: 3rem;
    font-weight: 300;
 }
 
 h1 span{
   position: relative;
   top: 5rem;
-  left: -32rem;
+  left: -25rem;
 }
 
 h2{
-    margin-top: 20rem;
+    margin-top: 13rem;
     position: absolute;
-    right: 30rem;
-    font-size: 4rem;
+    right: 27rem;
+    font-size: 3rem;
    font-weight: 300;;
 }
 
@@ -71,31 +71,33 @@ h2{
     scale: 2.3;
     transform: rotate(140deg);
     z-index: -1;
-    filter:  brightness(200%) contrast(0.6) opacity(40%);
+    filter:  brightness(200%) contrast(0.6) opacity(60%);
 }
 
 .blur2 {
     scale: 0.8;
     z-index: 3;
-    filter: hue-rotate(70deg) brightness(1.7);
-    position: relative;
-    top: -25rem;
-    left: 40rem;
+    transform: rotate(30deg);
+    filter: hue-rotate(70deg) brightness(1.4) opacity(80%);
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
 }
 
 
 
 .projects {
     position: relative;
-    top: -40rem;
+    top: -50rem;
     z-index: -1;
     background-color: #F1F1F1;
     margin-left: -20rem;
-    height: 130vh;
+    height: 140vh;
     width: 100vw;
 }
 
 .content h2{
+    font-size: 3rem;
     margin-top: 10rem;
     position: absolute;
     left: 20rem;
@@ -110,22 +112,39 @@ h2{
 
 .card {
     position: relative;
-    top: 25rem;
+    top: 20rem;
     border-radius: 5%;
-    width: 25rem;
-    height: 30rem;
+    width: 20rem;
+    height: 23rem;
     background: #D9D9D9;
     transition: all 600ms;
    }
 
+
+.card2 {
+    position: relative;
+    top: 0rem;
+    margin-left: 30rem;
+}
+
+
+
+.card3 {
+    position: relative;
+    top: 1rem;
+    margin-left: -10rem;
+    width: 28rem;
+    height: 23rem;
+}
 
 .card img {
     width: 100%;
     height: 75%;
     object-fit: cover;
     border-radius: 5%;
-}
+    filter: drop-shadow(0 2mm 1mm rgba(0, 0, 0, 0.2));
 
+}
 .card h3 {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -136,6 +155,7 @@ h2{
 
 
 .card p {
+    margin-top: 0rem;
     margin-left: 1rem;
     font-size: 1rem;
     font-weight: 300;
