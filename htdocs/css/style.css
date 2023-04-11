@@ -80,9 +80,23 @@ body {
 .techskills {
     margin-top:5rem;
     margin-bottom:5rem;
-    height: 20vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
     width: 100vw;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.techskills img {
+    height: 6vw;
+    width: 8vw;
+    object-fit: scale-down;
+    opacity: 80%;
 }
 
 
