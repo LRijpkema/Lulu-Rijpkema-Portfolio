@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -44,36 +44,37 @@ body {
 .hero{
     margin: 1rem;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero h1{
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
     font-size: 2.8rem;
 }
 
 .hero h2{
     margin: 1rem 0rem;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 2rem;
+
 }
 
-.hero p{
-    margin: 3rem 0rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 1.5rem;
-    max-width: 60%;
-}
 
 .hero p{
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     max-width: 60%;
+}
+
+.hero-icons {
+    margin: 2rem 0rem;
 }
 
 .hero i:hover {
@@ -100,7 +101,7 @@ body {
     height: 4vw;
     width: 8vw;
     object-fit: scale-down;
-    opacity: 80%;
+    opacity: 40%;
 }
 
 
@@ -148,6 +149,7 @@ body {
     justify-content: space-between;
     width: 31px;
     height: 21px;
+    transition-duration: 400ms;
 }
 
 .toggle-button .bar {
@@ -164,9 +166,18 @@ body {
 }
 
 .projects h2 {
-    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+}
+
+.projects p{
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
 }
 
 hr {
@@ -199,8 +210,18 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    .container-nav {
+        display: block;
+    }
+
     .toggle-button {
         display: flex;
+    }
+
+    .toggle-button.active {
+        display: flex;
+        transform: rotate(180deg);
     }
 
     .navbar-links {
@@ -218,7 +239,7 @@ footer {
     }
 
     .navbar-links li {
-        padding: 0.4rem 0.8rem;
+        padding: 0.4rem 2rem;
     }
 
     .navbar-links.active {
