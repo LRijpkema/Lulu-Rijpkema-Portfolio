@@ -67,10 +67,15 @@ body {
 .hero p{
     margin: 1rem 0rem;
     text-align: center;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     max-width: 60%;
+}
+
+.hero span{
+    color: rgb(206, 176, 255);
+    font-weight: 600;
+
 }
 
 .hero-icons {
@@ -161,24 +166,65 @@ body {
 
 
 .projects {
+    display: flex;
     margin: 1rem;
     width: 80%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .projects h2 {
     text-align: center;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     margin-bottom: 0rem;
 }
 
 .projects p{
     margin-top: 1rem;
+    margin-bottom: 10rem;
     text-align: center;
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
 }
+
+.project {
+    margin-bottom: 7rem;
+    display: flex;
+    width: 60vw;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.project img {
+    object-fit: cover;
+    height: 18rem;
+    width: 60%;
+}
+
+.project h3{
+    margin: 0rem 0rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.project-info{
+    width: 70%;
+    margin: 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.project-info p{
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
 
 hr {
     margin-top: 20vh;
