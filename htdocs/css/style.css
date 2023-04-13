@@ -58,7 +58,7 @@ body {
 
 .hero h2{
     margin: 1rem 0rem;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
 
 }
@@ -83,9 +83,9 @@ body {
 }
 
 .hero i:hover {
+    transition: 200ms;
     color: gray;
 }
-
 
 .techskills {
     margin-top:5rem;
@@ -224,6 +224,16 @@ body {
     text-align: start;
     margin-bottom: 2rem;
 }
+
+.about {
+    height: 50vh;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+
+
+
 
 
 hr {
