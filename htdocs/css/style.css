@@ -117,6 +117,7 @@ body {
 }
 
 .brand-title a {
+    transition: 5000ms;
     text-decoration: none;
     color: black;
 }
@@ -136,6 +137,7 @@ body {
 }
 
 .navbar-links li a{
+    transition: 400ms;
     text-decoration: none;
     color: black;
     padding: 1rem;
@@ -196,6 +198,31 @@ body {
     width: 60vw;
     /* background-color: lightgoldenrodyellow; */
 }
+
+
+.project button {
+    border: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    transition: 400ms;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.project button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+
+.project a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 .project img {
     object-fit: cover;
