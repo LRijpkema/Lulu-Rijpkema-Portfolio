@@ -255,7 +255,7 @@ body {
 .about {
     display: flex;
     width: 100vw;
-    background-color: gainsboro;
+    background-color: rgba(0, 0, 0, 0.075);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -289,8 +289,18 @@ body {
     margin-left: 5rem;
 }
 
+#imgTwo{
+   display: none;
+}
+
+/* #img1:hover{
+    display: none;
+} */
+
+
 
 .about-info img{
+    transition: 400ms;
     opacity: 50%;
     width: 20%;
 }
