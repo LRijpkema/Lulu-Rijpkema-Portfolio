@@ -113,17 +113,19 @@ body {
 .brand-title {
     padding: 1rem;
     padding-left: 0;
-    font-size: 1.5rem;
 }
 
 .brand-title a {
-    transition: 5000ms;
     text-decoration: none;
-    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(206, 176, 255);
+    transition: 400ms;
+
 }
 
 .brand-title a:hover {
-    color: gray;
+    color: rgba(206, 176, 255, 0.7);
 }
 
 .navbar-links ul {
