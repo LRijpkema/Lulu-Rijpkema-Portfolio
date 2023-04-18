@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -39,6 +40,7 @@ body {
     z-index: 1;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .hero{
@@ -295,17 +297,86 @@ body {
    display: none;
 }
 
-/* #img1:hover{
-    display: none;
-} */
-
-
-
 .about-info img{
     transition: 400ms;
     opacity: 50%;
     width: 20%;
 }
+
+.contact h3 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.contact h4 {
+    font-weight: 500;
+}
+
+.contact-links a {
+    transition: 400ms;
+    color: #000;
+}
+
+.contact-links a:hover {
+    color: gray;
+}
+
+
+.contact-data {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.contact-data p{
+    width: 25vw;
+}
+
+.contact-data form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+form .submit {
+    width: 30%;
+}
+
+form input, textarea{
+    margin-bottom: 2vh;
+    padding: 0.5rem;
+    border-style: none;
+    border-bottom: solid #000 1px;
+}
+
+form input:focus, textarea:focus{
+    background-color: rgba(0, 0, 0, 0.03);
+    outline: none;
+}
+
+
+
+
+textarea {
+    resize: vertical;
+    min-height: 15vh;
+    max-height: 45vh;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+}
+
+#phone {
+    margin-right: 2rem;
+}
+
+
 
 
 hr {
