@@ -1,4 +1,9 @@
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 * {
     box-sizing: border-box;
 }
@@ -308,7 +313,7 @@ body {
     margin-top: 4rem;
     margin-bottom: 5rem;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .contact h4 {

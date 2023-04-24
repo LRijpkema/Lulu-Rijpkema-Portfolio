@@ -33,9 +33,9 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#scrollprojects">Projects</a></li>
+            <li><a href="#scrollabout">About</a></li>
+            <li><a href="#scrollcontact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -73,6 +73,7 @@
       <img src="/htdocs/imgs/github_logo.png" alt="github" title="GitHub" />
     </section>
     <div class="container-section">
+      <div id="scrollprojects"></div>
       <section class="projects">
           <h2>Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
@@ -131,6 +132,7 @@
             </div>
           </div>
       </section>
+      <div id="scrollabout"></div>
       <section class="about">
         <h3>About Me</h3>
         <div class="container-about">
@@ -151,6 +153,7 @@
         </div>
       </div>
       </section>
+      <div id="scrollcontact"></div>
       <section class="contact">
         <div class="container-section" style="flex-direction: column;">
           <h3>Get in touch!</h3>
@@ -178,18 +181,18 @@
             </div>
               <form action="/action_page.php">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="firstname" placeholder="Your name..">
-            
+                <input type="text" id="name" name="firstname" placeholder="Your name..">           
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Your Email..">
-            
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" cols="50" maxlength="2000" name="message" placeholder="Write your message.."></textarea>
-              
+                <div class="checkbox">
+                  <input type="checkbox" id="Privacy" name="Privacy" value=true />
+                  <label for="Privacy">I Accept the <a href="#">Privacy Policy</a></label>
+                </div>
                 <input class="submit" type="submit" value="Submit">
               </form>
             </div>
-
             </div>
         </div>
       </section>
