@@ -18,7 +18,19 @@ body {
     overflow-y: scroll;
 }
 
-
+body  {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .navbar {
@@ -80,7 +92,13 @@ body {
 }
 
 .hero span{
-    color: rgb(206, 176, 255);
+    background-color: #f37878;
+    background-image: linear-gradient(130deg, #ffb4d4, #7bb9ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
     font-weight: 600;
 
 }
@@ -124,15 +142,10 @@ body {
 
 .brand-title a {
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(206, 176, 255);
-    transition: 400ms;
-
-}
-
-.brand-title a:hover {
-    color: rgba(206, 176, 255, 0.7);
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Damion', cursive;
+        
 }
 
 .navbar-links ul {
@@ -292,10 +305,17 @@ body {
 }
 
 
+
+
 .about-info p{
     width:60%;
     margin-right: 10em;
     margin-left: 5rem;
+}
+
+#imgOne{
+    animation: fadeBackground 3s;
+    animation-fill-mode: forwards;
 }
 
 #imgTwo{
@@ -304,7 +324,9 @@ body {
 
 .about-info img{
     transition: 400ms;
-    opacity: 50%;
+    
+    aspect-ratio: 3/4;
+    opacity: 100%;
     width: 20%;
 }
 
