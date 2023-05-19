@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
     />
     <script src="/htdocs/js/script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="/htdocs/css/style.css" />
     <title>Lulu | Software Developer Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/htdocs/imgs/icons/favicon.ico">
@@ -177,24 +179,26 @@
                   <h4>Phone</h4>
                   <a href="tel:+31644670652">+31 6 44670652</a>
                 </div>
-                <div id="email">
+                <div id="mail">
                   <h4>Email</h4>
                 <a href="mailto:lulurijpkema@gmail.com">lulurijpkema@gmail.com</a>
                 </div>
               </div>
             </div>
-              <form action="/action_page.php">
+              <form action="#" class="contact-form">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="firstname" placeholder="Your name..">           
+                <input type="text" id="name" name="name" placeholder="Your name.." required>           
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your Email..">
+                <input type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" id="email" name="email" placeholder="Your Email.." required>
                 <label for="message">Message</label>
-                <textarea id="message" rows="4" cols="50" maxlength="2000" name="message" placeholder="Write your message.."></textarea>
+                <textarea id="message" rows="4" cols="50" maxlength="2000" name="message" placeholder="Write your message.." required></textarea>
                 <div class="checkbox">
-                  <input type="checkbox" id="Privacy" name="Privacy" value=true />
+                  <input type="checkbox" id="privacy" name="Privacy" value=true required />
                   <label for="Privacy">I Accept the <a href="#">Privacy Policy</a></label>
                 </div>
-                <input class="submit" type="submit" value="Submit">
+                <input id="submit" type="submit"  >
+                <div id="success">Sent Succesfully!</div>
+                <div id="error">Error! Try Again</div>
               </form>
             </div>
             </div>
