@@ -39,36 +39,81 @@ submit.addEventListener('submit', (e) => {
 
   let ebody = `
 
-  <body>
-  <table bgcolor="#fafafa" style=" width: 100%!important; height: 100%; background-color: #fafafa; padding: 20px; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, 'Lucida Grande', sans-serif;  font-size: 100%; line-height: 1.6;">
-  <tr>
-  <td></td>
-  <td bgcolor="#FFFFFF" style="border: 1px solid #eeeeee; background-color: #ffffff; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;"><div style="padding:20px; max-width:600px; margin:0 auto; display:block;">
-  <table style="width: 100%;">
-  <tr>
-  <td><p style="text-align: center; display: block;  padding-bottom:20px;  margin-bottom:20px; border-bottom:1px solid #dddddd;"><img src="/htdocs/imgs/LULULOGO.png"/></p>
-  <h1 style="font-weight: 200; font-size: 36px; margin: 20px 0 30px 0; color: #333333;">Details</h1>
-  <p style="margin-bottom: 10px; font-weight: normal; font-size:16px; color: #333333;">[YOURFIELD]</p>
-  <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> [YOURFIELD] </h2>
-  <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> [YOURFIELD] </h2>
-  <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> [YOURFIELD] </h2>
-  <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> [YOURFIELD] </h2>
-  <p style="text-align: center; display: block; padding-top:20px; font-weight: bold; margin-top:30px; color: #666666; border-top:1px solid #dddddd;">YOUR COMPANY NAME</p></td>
-  </tr>
-  </table>
-  </div></td>
-  <td></td>
-  </tr>
-  </table>
+  <!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Contact Form</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 650px; margin: 0 auto;">
+      <tr>
+        <td>
+          <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 620px; margin: 0 auto; background: #ffffff;">
+            <tr>
+              <td style="background-color: #ffffff;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="padding-top: 20px; padding-bottom: 20px;">
+                  <tr>
+                    <td style="text-align: left;">
+                      <a href="#" style="text-decoration: none; font-size: 3rem; color: #000; font-family: 'Damion', cursive;">Lulu</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border: 4px solid #f9f9f9;">
+                  <tr>
+                    <td width="600" style="padding-top: 70px; padding-bottom: 40px; padding-left: 70px; padding-right: 70px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="font-family: Verdana, sans-serif; color: #000000; text-align: left; padding-bottom: 15px;">
+                            <label style="font-weight: bold; display: block; margin-bottom: 10px;">Name</label>
+                            <div style="margin-bottom: 15px;">${name.value}</div>
+                            <div style="border-bottom: 2px solid #f4f4f4;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="font-family: Verdana, sans-serif; color: #000000; text-align: left; padding-bottom: 15px;">
+                            <label style="font-weight: bold; display: block; margin-bottom: 10px;">Email</label>
+                            <div style="margin-bottom: 15px;">
+                              <a href="mailto:${email.value}" style="color: #000000;">${email.value}</a>
+                            </div>
+                            <div style="border-bottom: 2px solid #f4f4f4;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="font-family: Verdana, sans-serif; color: #000000; text-align: left; padding-bottom: 15px; line-height: 25px;">
+                            <label style="font-weight: bold; display: block; margin-bottom: 10px;">Message</label>
+                            <div>${msg.value}</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+-                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
+</html>
 
-      <b>Name: </b>${name.value}
-      <br>
-      <b>Email: </b> <a href="mailto:${email.value} ">${email.value}</a>
-      <br>
-      <b>Message: </b>${msg.value}
-  `
-    Email.send({
+`
+  Email.send({
       SecureToken : "f4969327-4363-4e13-a7e8-334c637ac062 ",
       To : 'lulurijpkema@gmail.com',
       From : 'luluportfoliocontactform@gmail.com',
