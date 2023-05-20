@@ -117,47 +117,50 @@ body  {
     transform: scale(1.1);
 }
 
+.blurry-gradient {
+    position: fixed;
+    top: -500px;
+    right: 0;
+    width: 1000px;
+    height: 1000px;
+    opacity: 0.5;
+  }
+
+
+
  #blur1{
     overflow: hidden;
     position: absolute;
-    height: 50%;
+    height: 120%;
     width: 80%;
-    left: -30rem;
-    top: 25rem;
+    left: -20rem;
+    top: 10rem;
     transform: rotate(-10deg);
     z-index: -1;
-    -webkit-animation: rotate-scale-down 40s ease-in-out infinite both;
-    animation: rotate-scale-down 40s ease-in-out infinite both;
+    -webkit-animation: rotate-scale-down 20s ease-in-out infinite both;
+    animation: rotate-scale-down 20s ease-in-out infinite both;
 }
 
 @-webkit-keyframes rotate-scale-down {
     0% {
+    
+        
       -webkit-transform: scale(1) rotateZ(0);
               transform: scale(1) rotateZ(0);
     }
     50% {
-      -webkit-transform: scale(0.5) rotateZ(180deg);
-              transform: scale(0.5) rotateZ(180deg);
+        position: absolute;
+        left: -40;
+      -webkit-transform: scale(0.7) rotateZ(180deg);
+              transform: scale(0.7) rotateZ(180deg);
     }
     100% {
       -webkit-transform: scale(1) rotateZ(360deg);
               transform: scale(1) rotateZ(360deg);
     }
   }
-  @keyframes rotate-scale-down {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(0.5) rotateZ(180deg);
-              transform: scale(0.5) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
-  }
+
+
   
 
 
