@@ -105,14 +105,64 @@ body  {
 
 .hero-icons {
     margin: 2rem 0rem;
+
+}
+
+.hero i{
+    transition: 300ms;
 }
 
 .hero i:hover {
-    transition: 200ms;
     color: gray;
+    transform: scale(1.1);
 }
 
+ #blur1{
+    overflow: hidden;
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    left: -30rem;
+    top: 25rem;
+    transform: rotate(-10deg);
+    z-index: -1;
+    -webkit-animation: rotate-scale-down 40s ease-in-out infinite both;
+    animation: rotate-scale-down 40s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+
+
 .techskills {
+    position: relative;
     margin-top:5rem;
     margin-bottom:5rem;
     padding-top: 2rem;
@@ -120,9 +170,10 @@ body  {
     padding-left: 10vw;
     padding-right: 10vw;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgb(236 236 236);
     display: flex;
     justify-content: space-around;
+    z-index: -1;
 
 }
 
@@ -158,16 +209,37 @@ body  {
     list-style: none;
 }
 
-.navbar-links li a{
-    transition: 400ms;
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
+
+
+.navbar-links li a {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  transition: 400ms;
 }
 
-.navbar-links li a:hover{
-    color: gray;
+.navbar-links li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
 }
+
+.navbar-links li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 
 .toggle-button {
     position: absolute;
@@ -218,7 +290,6 @@ body  {
     margin-bottom: 7rem;
     display: flex;
     width: 60vw;
-    /* background-color: lightgoldenrodyellow; */
 }
 
 
@@ -514,10 +585,3 @@ footer {
 
 
 }
-
-.blur1 {
-    scale: 2;
-    z-index: -1;
-    filter:  brightness(200%) contrast(0.6) opacity(50%);
-}
-
