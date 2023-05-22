@@ -8,24 +8,6 @@ toggleButton.addEventListener('click', () => {
 })
 
 
-const el = document.getElementById('imgOne');
-const hiddenDiv = document.getElementById('imgTwo');
-
-el.addEventListener('mouseover', function handleMouseOver() {
-  hiddenDiv.style.display = 'block';
-  el.style.display = 'none';
-
-
-
-});
-
-el.addEventListener('mouseout', function handleMouseOut() {
-    hiddenDiv.style.display = 'none';
-    el.style.display = 'block';
-  
-  });
-  
-
   const name = document.getElementById('name');
   const email = document.getElementById('email');
   const msg = document.getElementById('message');
