@@ -318,6 +318,9 @@ body  {
     width: 60vw;
 }
 
+.project button span{
+    transition: 400ms;
+}
 
 .project button {
     border: none;
@@ -330,18 +333,20 @@ body  {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.project button:hover {
+.project button:hover  {
     background-color: rgba(0, 0, 0, 0.05);
-
+    
 }
-
 
 .project a{
     text-decoration: none;
     color: black;
 }
 
-
+.project button:hover span{
+    /* position: relative; */
+    padding-left: 10px;
+}
 
 .project img {
     object-fit: cover;
