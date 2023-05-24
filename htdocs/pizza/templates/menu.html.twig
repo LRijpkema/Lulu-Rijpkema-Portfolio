@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ title }} | {{ parent()}} {% endblock %}
+
+{% block body %}
+    <div class="container-xl">
+        <h1 class="py-5">{{ title }}</h1>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Foto</th>
+                <th scope="col">Pizza</th>
+                <th scope="col">Catogorie</th>
+                <th scope="col">Beschrijving</th>
+                <th scope="col">Prijs</th>
+                <th scope="col">Bestel</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for pizza in pizzas %}
+                    <tr>
+                        <td><img src="{{ asset(pizza.image) }}" style="max-height: 3rem;"></td>
+                        <td>{{ pizza.name }}</td>
+                        <td>{{ pizza.category.name }}</td>
+                        <td>{{ pizza.description }}</td>
+                        <td>€{{ pizza.price }}</td>
+                        <td><a href="{{ path('pizza', {'id': pizza.id}) }}">Naar Pizza</a></td>
+                    </tr>
+            {% endfor %}
+
+
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+{% endblock %}

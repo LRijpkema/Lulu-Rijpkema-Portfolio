@@ -1,0 +1,14 @@
+.text-center p {
+    font-size: 0.9rem;
+}
+#navbar-brand{
+    font-family: "Rockwell";
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: 2rem;
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
