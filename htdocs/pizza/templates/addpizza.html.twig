@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ title }} | {{ parent()}} {% endblock %}
+
+{% block body %}
+
+    <div class="container-xl">
+
+        <h1 class="py-5">{{ title }}</h1>
+
+        <div class="row justify-content-md-center">
+                {{ form(form) }}
+        </div>
+    </div>
+
+
+{% for msg in app.session.flashBag.get('success') %}
+    <div class="alert alert-success">
+        {{ msg }}
+    </div>
+{% endfor %}
+
+
+
+{% endblock %}

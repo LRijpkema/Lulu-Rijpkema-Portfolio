@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{title}} | {{ parent()}} {% endblock %}
+
+{% block body %}
+<div class="container-xl">
+
+    <h1 class="py-5">{{ title }}</h1>
+
+    <div class="row">
+        <div class="col-9">
+
+            <h4 class="pb-5">Neem contact met ons op!</h4>
+                <p> Als u vragen heeft of een bestelling wilt plaatsen, helpen we u graag verder.<br><br>
+                    Om ons telefonisch te bereiken, kunt u ons restaurant bellen op <a href="tel:6031112298">06-88680315</a>.<br>
+                    Ons team van vriendelijke medewerkers is beschikbaar om u tijdens onze reguliere openingstijden te helpen.<br>
+                    Als u er de voorkeur aan geeft om ons een e-mail te sturen, kunt u een bericht sturen naar <a href = "mailto: contact@sopranos.nl">contact@sopranos.nl</a><br><br>
+                    We zullen ons best doen om zo snel mogelijk op uw bericht te reageren.<br>
+                    Bedankt voor uw interesse in onze pizza's en we kijken ernaar uit om binnenkort van u te horen!</p>
+        </div>
+        <div class="col-3">
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sopranos,%20restaurant,%20Eindhoven,%20Netherlands+(Sopranos)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

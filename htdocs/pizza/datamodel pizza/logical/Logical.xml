@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="8E897FB6-F963-521F-DCAD-C3C91FC48BDB" mainViewID="6130CD14-AAD9-A450-B426-4EB548E77590">
+<createdBy>lulur</createdBy>
+<createdTime>2023-02-09 14:06:00 UTC</createdTime>
+<ownerDesignName>datamodel pizza</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
