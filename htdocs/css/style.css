@@ -705,6 +705,10 @@ footer {
     margin-bottom: 3rem;
    }
 
+   .checkbox {
+    margin-bottom: 2rem;
+   }
+   
    input[type="submit"] {
     transform: scale(1.2) translateX(1rem);
    }
