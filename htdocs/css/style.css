@@ -710,7 +710,7 @@ footer {
    }
    
    input[type="submit"] {
-    transform: scale(1.2) translateX(1rem);
+    transform: scale(1.2) translateX(0rem);
    }
 }
 
