@@ -690,6 +690,13 @@ footer {
     width: 50vw;
    }
 
+   .contact .contact-data .info {
+    /* padding-left: 5rem; */
+   }
+
+   .contact .contact-data .contact-links {
+    flex-direction: column;
+   }
 
    .contact-data form {
     width: 50vw;
