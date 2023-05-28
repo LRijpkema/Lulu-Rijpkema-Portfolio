@@ -645,6 +645,58 @@ footer {
     width: 120px;
     margin-top: 1rem;
    }
+
+   .project {
+    flex-direction: column;
+   }
+
+   .project-info {
+    width: auto;
+   }
+
+   .project img{
+    height: 80%;
+    width: 100%;
+   }
+
+   .project a{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    padding
+   }
+
+   .about-info {
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .about-info p{
+    margin: auto;
+   }
+
+   .about-info img {
+    margin-top: 2rem;
+   }
+
+   .contact .contact-data {
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+   .contact-data p{
+    width: 50vw;
+   }
+
+
+   .contact-data form {
+    width: 50vw;
+   }
+   .contact-form {
+    margin-bottom: 3rem;
+   }
 }
 
 
