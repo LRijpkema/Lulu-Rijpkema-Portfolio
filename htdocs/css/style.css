@@ -704,6 +704,10 @@ footer {
    .contact-form {
     margin-bottom: 3rem;
    }
+
+   input[type="submit"] {
+    transform: scale(1.4);
+   }
 }
 
 
