@@ -738,7 +738,10 @@ footer {
 }
 
 
-
+video {
+        object-fit: cover !important;
+        border-radius: 10px !important;
+}
 
 
 
