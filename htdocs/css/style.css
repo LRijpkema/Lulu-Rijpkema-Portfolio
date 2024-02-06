@@ -204,7 +204,6 @@ body  {
 
 .techskills img {
     height: 4vw;
-    width: 8vw;
     object-fit: scale-down;
     opacity: 40%;
     transition: 1000ms;
@@ -448,6 +447,8 @@ a {
 #imgOne{
     animation: fadeBackground 3s;
     animation-fill-mode: forwards;
+    object-fit: contain;
+
 }
 
 #imgTwo{
