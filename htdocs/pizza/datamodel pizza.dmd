@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="datamodel pizza" id="B94937BE-4114-2E69-5761-A0845B28F00E" version="3.5">
-<createdBy>lulur</createdBy>
-<createdTime>2023-02-09 09:06:59 UTC</createdTime>
-<ownerDesignName>datamodel pizza</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>B94937BE-4114-2E69-5761-A0845B28F00E</designId>
-</OSDM_Design>
